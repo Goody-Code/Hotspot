@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البث المباشر</title>
+    <script src="https://cdn.jsdelivr.net/npm/he@1.2.0/he.min.js"></script>
+    <script>
+        function decodeHTML(encoded) {
+            const decodedBase64 = atob(encoded);
+            return he.decode(decodedBase64);
+        }
+
+        function fetchUpdates() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    const encodedHTML = xhr.responseText.trim();
+                    const decodedHTML = decodeHTML(encodedHTML);
+                    document.open();
+                    document.write(decodedHTML);
+                    document.close();
+                }
+            };
+            xhr.open("GET", "https://goody-code.github.io/live/update-mobasher.html", true);
+            xhr.send();
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            fetchUpdates();
+            setInterval(fetchUpdates, 60000);
+        });
+    </script>
+</head>
+<body>
+    <noscript>
+        JavaScript is required to view this content.
+    </noscript>
+</body>
+</html>
