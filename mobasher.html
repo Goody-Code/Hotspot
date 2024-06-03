@@ -19,20 +19,6 @@
             document.close();
         });
     </script>
-    <script>
-        function fetchUpdates() {
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    document.getElementById("content").innerHTML = xhr.responseText;
-                }
-            };
-            xhr.open("GET", "https://goody-code.github.io/live/update-mobasher.html", true); // الرابط إلى GitHub Pages
-            xhr.send();
-        }
-
-        setInterval(fetchUpdates, 10000); // تحديث كل 60 ثانية
-    </script>
 </head>
 <body>
     <noscript>
