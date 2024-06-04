@@ -41,7 +41,7 @@
 2. **إضافة كود زر البث المباشر**
    - أضف الكود التالي في نهاية كود الصفحة:
      ```html
-     
+     ```css
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -143,6 +143,8 @@
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    ```
+    ```html
     <div class="popup" id="liveStreamPopup">
         <div class="popup-header">
             <i class="fas fa-video"></i> بث مباشر
@@ -154,7 +156,8 @@
         </div>
         <a href="mobasher.html" class="popup-button">مشاهدة البث المباشر</a>
     </div>
-
+    ```
+    ```js
     <script>
         window.onload = function() {
             document.getElementById('liveStreamPopup').classList.add('show-popup');
@@ -165,7 +168,7 @@
     </script>
 
      ```
-
+   ```
 ### شكر وتقدير
 
 تم تطوير هذا المشروع من قبل المهندس والمطور خالد الغيلي، الذي يقدم هذا الحل لأصحاب الشبكات بكل فخر وتفاني. نقدم له ألف شكر وتحية على مساهمته وجهوده.
