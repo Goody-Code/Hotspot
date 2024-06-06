@@ -32,7 +32,7 @@
   "redirect-to-mobasher": "mobasher.html"
 }
 ```
--[بهاذا الشكل](https://i.postimg.cc/yd4W7YWX/IMG-20240606-WA0065.jpg)
+-![بهاذا الشكل](https://i.postimg.cc/yd4W7YWX/IMG-20240606-WA0065.jpg)
 
 
 
@@ -48,7 +48,7 @@
 
 2. **إضافة كود نافذه زر البث المباشر**
    - أضف الكود الذي قمت بنسخه في نهاية كود الصفحة:
-     -[ستظهر نافذه لدخول البث بهاذا الشكل](https://i.postimg.cc/vThNZNft/Screenshot-Chrome.jpg)
+     -![ستظهر نافذه لدخول البث بهاذا الشكل](https://i.postimg.cc/vThNZNft/Screenshot-Chrome.jpg)
      
 
 ### شكر وتقدير
