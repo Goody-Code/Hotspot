@@ -79,5 +79,4 @@
 
 **روابط التحميل:**
 - [تحميل ملفات البث](https://github.com/Goody-Code/Hotspot/archive/refs/heads/main.zip)
-- 
 - [تحميل ملف كود نافذه عرض زر البث في الصفحة](https://raw.githubusercontent.com/Goody-Code/live/main/mobasher-pop.html)
