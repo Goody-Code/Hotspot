@@ -19,6 +19,7 @@
 3. **تعديل ملف config.js**
 
    - افتح ملف `config.js` الموجود في مجلد صفحة الهوتسبوت باستخدام أي محرر نصوص.
+   -![بهاذا الشكل](https://i.postimg.cc/Gtb2s7F4/Screenshot-My-Files.jpg)
    - ابحث عن القيمة `"redirect-to-mobasher"` وقم بتعديلها لتصبح كما يلي:
      ```json
      "redirect-to-mobasher": "mobasher.html"
