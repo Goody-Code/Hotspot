@@ -35,6 +35,9 @@
 ```
 -![بهاذا الشكل](https://i.postimg.cc/yd4W7YWX/IMG-20240606-WA0065.jpg)
 
+- بعد ذالك سيضهر زر الدخول الى البث في الصفحة بهاذا الشكل.
+![زر البث](https://i.postimg.cc/Gh7vnmGb/Screenshot-Chrome.jpg)
+
 
 
 ### لأصحاب الشبكات الذين ليس لديهم ملف config.js
