@@ -126,26 +126,6 @@
         }
 
         window.onload = loadIframe;
-
-        window.addEventListener('message', (event) => {
-            if (event.origin !== 'https://goody-code.github.io/') {
-                
-                return;
-            }
-
-            if (event.data === 'requestFullscreen') {
-                const iframe = document.getElementById('content');
-                if (iframe.requestFullscreen) {
-                    iframe.requestFullscreen();
-                } else if (iframe.mozRequestFullScreen) { 
-                    iframe.mozRequestFullScreen();
-                } else if (iframe.webkitRequestFullscreen) { 
-                    iframe.webkitRequestFullscreen();
-                } else if (iframe.msRequestFullscreen) { 
-                    iframe.msRequestFullscreen();
-                }
-            }
-        });
     </script>
 </head>
 <body>
