@@ -108,17 +108,21 @@
         }
     </style>
     <script>
-        function decodeBase64(encoded) {
-            return decodeURIComponent(escape(atob(encoded)));
-        }
-
         function showContent() {
             document.getElementById('loader').style.display = 'none';
             document.getElementById('content').style.display = 'block';
         }
 
         function loadIframe() {
-            const encodedUrl = 'aHR0cHM6Ly9nb29keS1jb2RlLmdpdGh1Yi5pby9saXZlL3VwZGF0ZS1tb2Jhc2hlci5odG1s';
+            let encodedUrl;
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+            if (isMobile) {
+                encodedUrl = 'aHR0cHM6Ly9nb29keS1jb2RlLmdpdGh1Yi5pby9saXZlL3VwZGF0ZS1tb2Jhc2hlci5odG1s';
+            } else {
+                encodedUrl = 'aHR0cHM6Ly9nb29keS1jb2RlLmdpdGh1Yi5pby9saXZlL3Nwb3J0Lmh0bWw=';
+            }
+
             const decodedUrl = atob(encodedUrl);
             const iframe = document.getElementById('content');
             iframe.src = decodedUrl;
